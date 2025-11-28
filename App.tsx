@@ -1,4 +1,3 @@
-import React from 'react';
 import { Smartphone, Layout, Monitor, Instagram } from 'lucide-react';
 import { Rule48Hours } from './components/Rule48Hours';
 import { DimensionCard } from './components/DimensionCard';

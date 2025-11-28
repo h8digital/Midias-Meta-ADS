@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { CheckSquare, Square, ClipboardCheck } from 'lucide-react';
 import { SectionHeader } from './SectionHeader';
 import { ChecklistItem } from '../types';
