@@ -112,7 +112,7 @@ export default function App() {
             <p className="mb-2">Playbook Visual • Meta Ads</p>
             <div className="flex justify-center items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-gray-300"></span>
-              <span>Mobile First Design</span>
+              <span>H8 Digital ®</span>
               <span className="w-1 h-1 rounded-full bg-gray-300"></span>
             </div>
           </footer>
