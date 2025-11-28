@@ -3,12 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    
+    <!-- Enforce Light Mode Scheme -->
+    <meta name="color-scheme" content="light">
+    
     <title>Meta Ads Playbook</title>
     <!-- Tailwind via CDN is fine for this project size, but normally we'd import it in CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Configure Tailwind to ignore system preference (media) and use manual (class)
+      // This forces the app to stay in light mode unless we add a specific toggle.
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
     <style>
+      :root {
+        color-scheme: light; /* Forces browser UI (scrollbars, inputs) to be light */
+      }
       body {
-        background-color: #f0f2f5;
+        background-color: #f9fafb; /* Matches gray-50 */
+        color: #111827; /* Matches gray-900 */
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       }
       /* Custom scrollbar hide for clean mobile look where applicable */
@@ -33,7 +48,7 @@
 }
 </script>
 </head>
-  <body>
+  <body class="bg-gray-50 text-gray-900 antialiased">
     <div id="root"></div>
     <!-- Vite Entry Point -->
     <script type="module" src="/index.tsx"></script>
